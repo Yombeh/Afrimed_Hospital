@@ -35,7 +35,7 @@ departments (1) ──< doctors (1) ──< appointments (1) ──< billing
 - `patients` intentionally has no name field — only demographic attributes (Gender, Age, Region). This mirrors real-world healthcare data practice, where analytical access to patient data is typically de-identified.
 - `appointments` acts as a junction table resolving the many-to-many relationship between patients and doctors — a patient sees many doctors over time, and a doctor sees many patients, so the relationship can't be modeled with a direct foreign key on either side.
 
-### A design fix worth documenting
+### A design fix 
 
 The original schema linked `billing` directly to `patients` only. While that correctly reflects who is responsible for payment, it made department- and doctor-level revenue analysis impossible — there was no path from a bill to the department that generated it without going through an appointment.
 
