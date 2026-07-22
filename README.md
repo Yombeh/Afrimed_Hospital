@@ -6,7 +6,7 @@ A end-to-end data project covering database design, synthetic data generation, S
 **Stack:** MySQL 8.0 · Python (Faker) · Power BI Desktop
 
 ---
-![AfriMed Dashboard](dashboard-overview.png)
+![AfriMed Dashboard](dashboard-complete.png)
 
 ## Project Overview
 
